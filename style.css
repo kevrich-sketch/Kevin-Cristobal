@@ -620,7 +620,7 @@ a:hover {
   width: 100%;
 }
 
-/* Box contenitore dell'immagine in orizzontale */
+
 .percorso-immagine-contenitore {
   position: relative;
   border-radius: var(--raggio);
@@ -628,8 +628,8 @@ a:hover {
   border: 1px solid var(--colore-bordo);
   transition: all var(--transition-smooth);
   width: 100%; 
-  height: 350px; /* Altezza bloccata per mantenere l'effetto panoramico orizzontale */
-  background-color: var(--colore-card); /* Colore di riempimento per i lati */
+  height: 350px; 
+  background-color: var(--colore-card); 
 }
 
 .percorso-immagine-contenitore a {
@@ -649,7 +649,7 @@ a:hover {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: contain; /* Mostra l'intera infografica verticale centrata senza tagliarla */
+  object-fit: contain; 
   filter: saturate(0.85) contrast(1.02);
   transition: filter var(--transition-smooth), transform var(--transition-smooth);
 }
@@ -680,10 +680,10 @@ a:hover {
   width: 100%;
 }
 
-/* Griglia per le 4 colonne dei testi */
+
 .percorso-griglia-anni {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Crea esattamente 4 colonne */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 24px;
   width: 100%;
 }
@@ -695,7 +695,7 @@ a:hover {
   padding: 16px 0;
   background: transparent;
   position: relative;
-  border-top: 1px solid var(--colore-bordo); /* Linea di divisione superiore per ogni colonna */
+  border-top: 1px solid var(--colore-bordo); 
   transition: all var(--transition-fast);
 }
 
@@ -727,20 +727,20 @@ a:hover {
   font-weight: 600;
 }
 
-/* Responsive per tablet e smartphone */
+
 @media (max-width: 1024px) {
   .percorso-griglia-anni {
-    grid-template-columns: repeat(2, 1fr); /* 2 colonne su tablet */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
   }
 }
 
 @media (max-width: 640px) {
   .percorso-griglia-anni {
-    grid-template-columns: 1fr; /* 1 colonna singola su smartphone */
+    grid-template-columns: 1fr; 
   }
   .percorso-immagine-contenitore {
-    height: 240px; /* Riduce l'altezza del box orizzontale sui telefoni */
+    height: 240px; 
   }
 }
 
